@@ -36,7 +36,7 @@ class DatabaseSeeder extends Seeder
 
         // User::factory(5)->create();
 
-        // Dashboard::create()->social()->associate(Social::create())->save();
+        Dashboard::create()->social()->associate(Social::create())->save();
 
         // for ($i = 0; $i < 10; $i++) {
         //     Staf::factory()->for(Social::create())->create();

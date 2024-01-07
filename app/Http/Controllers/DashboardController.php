@@ -21,7 +21,7 @@ class DashboardController extends Controller
         $rule = [];
 
         if ($request->logo) {
-            $rule['bg_navbar'] = ['image', 'file', 'max:2048'];
+            $rule['logo'] = ['image', 'file', 'max:2048'];
         } else if ($request->bg_navbar) {
             $rule['bg_navbar'] = ['image', 'file', 'max:5120'];
         } else if ($request->bg_staf) {
