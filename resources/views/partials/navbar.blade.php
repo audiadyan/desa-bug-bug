@@ -86,18 +86,18 @@
             <div class="hidden sm:flex" id="navbar">
                 <ul class="navbar-nav flex flex-col sm:flex-row sm:flex-center sm:space-x-3 list-style-none sm:mx-auto">
                     <li
-                        class="nav-item p-2 {{ Request::is('/') ? 'text-blue-600 border-b-4 border-blue-600' : 'text-black hover:text-blue-400 hover:border-b-2 hover:border-blue-400' }}">
+                        class="nav-item p-2 hover:cursor-pointer {{ Request::is('/') ? 'text-blue-600 border-b-4 border-blue-600' : 'text-black hover:text-blue-400 hover:border-b-2 hover:border-blue-400' }}">
                         <a class="nav-link p-0" href="/">Beranda</a>
                     </li>
 
                     <li
-                        class="nav-item p-2 {{ Request::is('information*') ? 'text-blue-600 border-b-4 border-blue-600' : 'text-black hover:text-blue-400 hover:border-b-2 hover:border-blue-400' }}">
+                        class="nav-item p-2 hover:cursor-pointer {{ Request::is('information*') ? 'text-blue-600 border-b-4 border-blue-600' : 'text-black hover:text-blue-400 hover:border-b-2 hover:border-blue-400' }}">
                         <a class="nav-link p-0" href="/information">Informasi</a>
                     </li>
 
                     <li
-                        class="dropdown dropdown-hover nav-item p-2 {{ Request::is('profile*') ? 'text-blue-600 border-b-4 border-blue-600' : 'text-black hover:text-blue-400 hover:border-b-2 hover:border-blue-400' }}">
-                        <label tabindex="0"><a class="nav-link p-0" href="#">Profil Desa</a></label>
+                        class="dropdown dropdown-hover nav-item p-2 hover:cursor-pointer {{ Request::is('profile*') ? 'text-blue-600 border-b-4 border-blue-600' : 'text-black hover:text-blue-400 hover:border-b-2 hover:border-blue-400' }}">
+                        <label tabindex="0" class="nav-link p-0"><a href="#">Profil Desa</a></label>
                         <ul tabindex="0"
                             class="text-black dropdown-content menu mt-2 p-2 shadow bg-base-100 rounded-box w-52">
                             <li><a href="/profile/about">Tentang Desa</a></li>
@@ -106,7 +106,7 @@
                     </li>
 
                     <li
-                        class="dropdown dropdown-hover nav-item p-2 {{ Request::is('government*') ? 'text-blue-600 border-b-4 border-blue-600' : 'text-black hover:text-blue-400 hover:border-b-2 hover:border-blue-400' }}">
+                        class="dropdown dropdown-hover nav-item p-2 hover:cursor-pointer {{ Request::is('government*') ? 'text-blue-600 border-b-4 border-blue-600' : 'text-black hover:text-blue-400 hover:border-b-2 hover:border-blue-400' }}">
                         <label tabindex="0"><a class="nav-link p-0" href="#">Pemerintahan</a></label>
                         <ul tabindex="0"
                             class="text-black dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
